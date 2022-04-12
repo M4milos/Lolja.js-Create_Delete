@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Lolja</title>
+</head>
+<body>
+    
+<p class="xd" id="nome">Visitante</p>
+
+<input class="xd" type="text" id="nomevisitante">
+
+<button onclick="visitante()">Atualizar nome do visitante</button><br><br>
+
+</table>
+
+<fieldset id="pai">
+<div id="itens">
+    <table id="item1">
+        <thead>
+            <tr>
+                <th>Café 3 corações</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <img src="../img/café.png" alt="Café.png">
+                    <p id="numero"> 1 </p>
+                    <p>Valor unitário: 12.5</p>
+                    <h5 id ="valor1">12.5</h5>
+            </td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <td>
+            <button onclick="Acao('+'); Valor('+')"> + </button>
+            <button onclick="Acao('-'); Valor('-')"> - </button>
+            <button onclick="AdicionarExcluir('excluir1')"> Remover </button>
+        </td>
+    </tfoot>
+</div>
+</table>
+</fieldset>
+
+<fieldset id="pai2">
+<div id="itens2">
+<table id="item2">
+    <thead>
+        <tr>  
+            <th>Café Lucca</th>
+        </tr>
+    </thead>
+    <tbody>
+        <td>
+            <img src="../img/café2.png" alt="Café.png">
+            <p id="numero2"> 1 </p>
+            <p>Valor unitário: 13</p>
+            <h5 id ="valor2">13</h5>
+        </td>
+    </tbody>
+    <tfoot>
+        <td>
+            <button onclick="Acao('++'); Valor('++')"> + </button>
+            <button onclick="Acao('--'); Valor('--')"> - </button>
+            <button onclick="AdicionarExcluir('excluir2')"> Remover </button>
+        </td> 
+    </tfoot>
+</table>
+</div>
+</fieldset>
+<center>
+    <button onclick="FinalizarCompra()">Finalizar Compra</button>
+</center>
+<br>
+
+
+
+<script src="../js/lolja.js"></script>
+
+</body>
+</html>
